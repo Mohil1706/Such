@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO Header</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+
+    <!-- HAMBURGER LEFT -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- LOGO CENTER -->
+    <div class="nav-left">
+        <img src="images/ad1.png" alt="Logo" class="logo-img">
+        <h1 class="logo">ADAAH</h1>
+    </div>
+
+    <!-- NAV MENU -->
+    <nav class="nav-links" id="navMenu">
+        <a href="tshirt.html"><b>T-Shirt</b></a>
+        <a href="hoodies.html"><b>Hoodies</b></a>
+        <a href="contact.html"><b>Contact Us</b></a>
+        <a href="about.html"><b>About Us</b></a>
+    </nav>
+
+    <!-- SEARCH BAR -->
+    <div class="nav-center">
+        <div class="search-box">
+            <input type="text" placeholder="Search for products...">
+            <span class="search-icon">🔍</span>
+        </div>
+    </div>
+
+    <!-- RIGHT ICONS -->
+    <div class="nav-right">
+        <a href="cart.html" class="icon">🛒</a>
+        <a href="account.html" class="icon">👤</a>
+    </div>
+
+</header>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navMenu");
+    menu.classList.toggle("mobile-open");
+}
+</script>
+
+
+<section class="hero-section">
+  <div class="hero-text">
+    <h1>
+      FIND CLOTHES <br />
+      THAT MATCHES <br />
+      YOUR STYLE
+    </h1>
+    <p>
+      Browse through our diverse range of meticulously crafted garments,
+      designed to bring out your individuality and cater to your sense of style.
+    </p>
+    <button class="shop-button" onclick="window.location.href='hoodies.html'">Shop Now</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/rect.png" alt="Fashion Models" class="main-image" />
+  </div>
+</section>
+
+<div class="brand-bar">
+  <span class="brand-text">New Arrivals</span>
+</div>
+
+<!-- PRODUCT CARDS -->
+<div class="product-cards">
+  <div class="card">
+    <img src="images/o1.jpg" alt="Cloth 1" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Stylish Jacket</a></h3>
+    <div class="rating">⭐⭐⭐⭐</div>
+    <p class="price">₹299</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o2.jpg" alt="Cloth 2" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Casual Shirt</a></h3>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <p class="price">₹399</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o3.jpg" alt="Cloth 3" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Summer Dress</a></h3>
+    <div class="rating">⭐⭐⭐⭐</div>
+    <p class="price">₹499</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o4.jpg" alt="Cloth 4" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Denim Jeans</a></h3>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <p class="price">₹399</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+</div>
+
+<!-- View All Button -->
+<div class="view-all-container">
+  <button class="view-all-btn" onclick="window.location.href='shop.html'">View All -></button>
+</div>
+
+<h2 class="category-heading">Browse Your Styles for Everyone !!!</h2>
+
+<div class="category-section">
+  <div class="category-box">
+
+    <a href="men.html" class="category-item">
+      <img src="images/o1.jpg" alt="Men">
+      <h3>Men</h3>
+    </a>
+
+    <a href="women.html" class="category-item">
+      <img src="images/o2.jpg" alt="Women">
+      <h3>Women</h3>
+    </a>
+
+    <a href="kids.html" class="category-item">
+      <img src="images/k1.jpg" alt="Kids">
+      <h3>Kids</h3>
+    </a>
+
+  </div>
+</div>
+
+<div class="brand-bar2">
+  <span class="brand-text"><b>Top Selling</b></span>
+</div>
+
+<!-- TOP SELLING PRODUCTS -->
+<div class="product-cards">
+  <div class="card">
+    <img src="images/o1.jpg" alt="Cloth 1" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Stylish Jacket</a></h3>
+    <div class="rating">⭐⭐⭐⭐</div>
+    <p class="price">₹299</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o2.jpg" alt="Cloth 2" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Casual Shirt</a></h3>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <p class="price">₹399</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o3.jpg" alt="Cloth 3" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Summer Dress</a></h3>
+    <div class="rating">⭐⭐⭐⭐</div>
+    <p class="price">₹499</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="images/o4.jpg" alt="Cloth 4" />
+    <h3><a href="detail.html" style="text-decoration:none; color:inherit;">Denim Jeans</a></h3>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <p class="price">₹399</p>
+    <button class="add-to-cart" onclick="window.location.href='payment.html';">Buy Now</button>
+  </div>
+</div>
+
+<div class="view-all-container">
+  <button class="view-all-btn" onclick="window.location.href='shop.html'">View All -></button>
+</div>
+
+<!-- REVIEWS SECTION -->
+<section class="reviews-section">
+    <h2 class="reviews-heading">What Our Customers Say</h2>
+
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Amazing quality and fast delivery! Totally worth buying."</p>
+            <h4 class="review-user">— Rabbani K.</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Great collection, loved the new arrivals section."</p>
+            <h4 class="review-user">— Mohil K.</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Perfect fit and amazing fabric. Highly recommend!"</p>
+            <h4 class="review-user">— Rahil k.</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Loved the customer service, super friendly!"</p>
+            <h4 class="review-user">— Sana K.</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Very stylish outfits at great prices."</p>
+            <h4 class="review-user">— Basheera K.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+    <div class="newsletter-box">
+        <div class="newsletter-text">
+            <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+        </div>
+
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" class="email-input">
+            <button class="subscribe-btn" onclick="window.location.href='subscribe.html'">Subscribe to Newsletter</button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h2 class="footer-logo">ADAAH.co</h2>
+      <p>Your one-stop shop for the latest fashion trends. Quality products, delivered fast.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="new.html">New Arrivals</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-service">
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Subscribe</h3>
+      <p>Get our latest offers and updates directly to your inbox.</p>
+      <div class="footer-subscribe">
+        <input type="email" placeholder="Enter your email" />
+        <button onclick="window.location.href='subscribe.html'">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ADAAH.co All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
