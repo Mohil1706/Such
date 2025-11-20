@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billing Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    background-image: url('images/c1.jpg'); /* replace with your image path */
+    background-size: cover;        /* makes image cover the container */
+    background-position: center;   /* centers the image */
+    background-repeat: no-repeat;  /* prevents tiling */
+    
+    /* Optional: make text more readable over image */
+    color: rgb(0, 0, 0);  
+  }
+
+  .container {
+    background-color: rgb(195, 190, 180);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+                    /* text color */
+
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .description p {
+    margin: 5px 0;
+  }
+
+  img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 9px;
+
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #010401;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #5b605c;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Billing Form</h1>
+
+  <div class="description">
+    <p>Please scan the QR code below to complete your payment.</p>
+    <p>After payment, click "Pay Now" to confirm your transaction.</p>
+  </div>
+
+  <img src="images/qrcode.jpg" alt="QR Code Screenshot">
+
+  <button onclick="payNow()">Pay Now</button>
+</div>
+
+<script>
+  function payNow() {
+    const paymentLink = "https://docs.google.com/forms/d/e/1FAIpQLSdl2kSpLNfx-kg9SQ9YsariTFpQyycZ52MMhsn92zDkWPHuaQ/viewform?usp=header";
+    window.location.href = paymentLink;
+  }
+</script>
+
+</body>
+</html>

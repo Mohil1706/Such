@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts Collection | SHOP.CO</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 0 8% 50px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            border-color: #000;
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .rating {
+            margin: 5px 0;
+            color: #f7b500;
+        }
+
+        .price {
+            font-size: 18px;
+            margin: 5px 0 10px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .details-btn {
+            background: #ddd;
+        }
+
+        .details-btn:hover {
+            background: #ccc;
+        }
+
+        .buy-btn {
+            background: #000;
+            color: #fff;
+        }
+
+        .buy-btn:hover {
+            background: #444;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    SHOP.CO – T-Shirts Collection
+</header>
+
+<h1 class="section-title">Premium T-Shirts Collection</h1>
+
+<div class="products-container">
+
+    <!-- T-shirt 1 -->
+    <div class="card">
+        <img src="images/t1.jpg" alt="Tshirt 1">
+        <h3><a href="detail.html">Classic White T-Shirt</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹299</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 2 -->
+    <div class="card">
+        <img src="images/t2.jpg" alt="Tshirt 2">
+        <h3><a href="detail.html">Black Oversized Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price">₹349</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 3 -->
+    <div class="card">
+        <img src="images/t3.jpg" alt="Tshirt 3">
+        <h3><a href="detail.html">Minimal Beige Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹399</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 4 -->
+    <div class="card">
+        <img src="images/t4.jpg" alt="Tshirt 4">
+        <h3><a href="detail.html">Printed Graphic Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price">₹449</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 5 -->
+    <div class="card">
+        <img src="images/t5.jpg" alt="Tshirt 5">
+        <h3><a href="detail.html">Sky Blue Comfort Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹329</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 6 -->
+    <div class="card">
+        <img src="images/t6.jpg" alt="Tshirt 6">
+        <h3><a href="detail.html">Retro Orange Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price">₹379</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 7 -->
+    <div class="card">
+        <img src="images/t7.jpg" alt="Tshirt 7">
+        <h3><a href="detail.html">Navy Blue Solid Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹349</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 8 -->
+    <div class="card">
+        <img src="images/t8.jpg" alt="Tshirt 8">
+        <h3><a href="detail.html">White Printed Oversized Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price">₹399</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 9 -->
+    <div class="card">
+        <img src="images/t9.jpg" alt="Tshirt 9">
+        <h3><a href="detail.html">Green Cotton T-Shirt</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹359</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 10 -->
+    <div class="card">
+        <img src="images/t10.jpg" alt="Tshirt 10">
+        <h3><a href="detail.html">Full Sleeve Black Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐</div>
+        <p class="price">₹499</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 11 -->
+    <div class="card">
+        <img src="images/t11.jpg" alt="Tshirt 11">
+        <h3><a href="detail.html">Casual Red Tee</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹369</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- T-shirt 12 -->
+    <div class="card">
+        <img src="images/t12.jpg" alt="Tshirt 12">
+        <h3><a href="detail.html">Premium Black Printed T-Shirt</a></h3>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">₹449</p>
+        <div class="button-group">
+            <button class="btn details-btn" onclick="location.href='detail.html'">Details</button>
+            <button class="btn buy-btn" onclick="location.href='payment.html'">Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 SHOP.CO — All Rights Reserved
+</footer>
+
+</body>
+</html>
